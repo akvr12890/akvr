@@ -44,14 +44,12 @@
    let heapId
       const hostName = window.location.hostname;
 
-      switch (hostName) {
-        case 'akvr12890.github.io':
-          heapId = '3376376069'
-          break
-        default:
-          heapId = '3185953942'
+      if(hostName = 'akvr12890.github.io') {
+          heapId = '3376376069';
+      } else {
+          heapId = '3185953942';
       }
-      await window.heap.load(heapId);
+      window.heap.load(heapId);
 </script> 
 </head>
 
