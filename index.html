@@ -53,6 +53,7 @@ heap.load("3376376069", {
         if (props.pageview_properties.query) {
             props.pageview_properties.query = props.pageview_properties.query.replace(queryRegex, redactText);
         }
+        }
 
     // Session Properties
     if (props.session_properties) { 
@@ -62,7 +63,6 @@ heap.load("3376376069", {
     if (props.event_properties) {  
     }
     return props;
-}
 }
 
 }); 
