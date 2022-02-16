@@ -225,14 +225,14 @@ $(function() {
     });
 
     //===== addUserProperties
-	function callAUP(event) {
-  heap.addUserProperties({"email": emailAddress});
-  event.preventDefault();
-}
+function callAUP(event) {
+  	heap.addUserProperties({"email": emailAddress});
+  	event.preventDefault();
+	}
 
-const form = document.getElementById('contact-form');
-var emailAddress = document.getElementsByName("email")[0].value;
-form.addEventListener('submit', callAUP);
+	const form = document.getElementById('contact-form');
+	var emailAddress = document.getElementsByName("email")[0].value;
+	form.addEventListener('submit', callAUP);
 	
     //=====  Rating selection
     
