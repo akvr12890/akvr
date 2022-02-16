@@ -1326,9 +1326,10 @@ function onPlayerStateChange(newState) {
                                 </div> <!-- row -->
                             </form>
                            <script>
-                              var emailAddress = document.getElementsByName("email")[0].value;   
                               function callAUP(event) {
+                                    var emailAddress = document.getElementsByName("email")[0].value; 
                                     heap.addUserProperties({"email": emailAddress});
+                                    console.log("Email: " + emailAddress)
                                     event.preventDefault();
                                     }
 
