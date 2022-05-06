@@ -909,6 +909,13 @@ heap.load("3376376069", {
 <div class="Mytooltip">Hover over me
   <span class="Mytooltiptext">This is my tooltip!</span>
 </div>
+       <script>
+          document.addEventListener('mouseover', function(e) {
+  if (/Mytooltip/.test(e.target.className)) {
+    heap.track("Tooltip Hover", {"Tooltip Text": document.querySelector("span.Mytooltiptext").innerHTML});
+  }
+}, false);
+                   </script>
                   
                    <!-- section title -->
                 </div>
