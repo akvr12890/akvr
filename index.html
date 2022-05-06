@@ -863,13 +863,13 @@ heap.load("3376376069", {
                      </span>
                   </div>
                   <style>
-.tooltip {
+.Mytooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
 }
 
-.tooltip .tooltiptext {
+.Mytooltip .Mytooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -883,18 +883,18 @@ heap.load("3376376069", {
   z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
+.Mytooltip:hover .Mytooltiptext {
   visibility: visible;
 }
 
-.tooltip .tooltiptext {
+.Mytooltip .Mytooltiptext {
   width: 120px;
   bottom: 100%;
   left: 50%;
   margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
-.tooltip .tooltiptext::after {
+.Mytooltip .Mytooltiptext::after {
   content: " ";
   position: absolute;
   top: 100%; /* At the bottom of the tooltip */
@@ -906,8 +906,8 @@ heap.load("3376376069", {
 }
 </style>
 
-<div class="tooltip">Hover over me
-  <span class="tooltiptext">This is my tooltip!</span>
+<div class="Mytooltip">Hover over me
+  <span class="Mytooltiptext">This is my tooltip!</span>
 </div>
                   
                    <!-- section title -->
