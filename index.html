@@ -919,6 +919,7 @@ heap.load("3376376069", {
           document.addEventListener('mouseover', function(e) {
   if (/Mytooltip/.test(e.target.className)) {
     heap.track("Tooltip Hover", {"Tooltip Text": document.querySelector("span.Mytooltiptext").innerHTML});
+     Appcues.track("Tooltip Hover Appcues Test", {"Appcues Tooltip Text": document.querySelector("span.Mytooltiptext").innerHTML});
   }
 }, false);
                    </script>
