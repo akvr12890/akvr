@@ -1390,6 +1390,7 @@ function onPlayerStateChange(newState) {
                               function callAUP(event) {
                                     var emailAddress = document.getElementsByName("email")[0].value; 
                                     heap.addUserProperties({"email": emailAddress});
+                                    Appcues.identify(emailAddress);
                                     console.log("Email: " + emailAddress)
                                     event.preventDefault();
                                     }
